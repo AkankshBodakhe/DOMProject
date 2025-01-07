@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Watches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./photos/logo.png" alt="Casio logo" class="logo">
+
+        <form style="display: flex;">
+            <input type="text" placeholder="Search...">
+            <img src="./photos/search-logo.png" alt="Search logo" class="searchButton" onclick="search()">
+        </form>
+
+        <img src="./photos/filter-button.png" alt="Filter button" class="filterbtn" onclick="filterToggle()">
+    </header>
+
+    <div class="filter">
+        <h5>Search by filter</h5>
+        <li> <label>Price range: </label>
+            <div class="price-range">
+                <input type="number" placeholder="min." name="min-value">
+                <input type="number" placeholder="max." name="max-value">
+            </div>
+        </li>
+        
+        <li>
+            <label>Type: </label>
+            <div class="watch-type">
+                <input type="checkbox" value="Analogue" name="watch-type" id="Analogue">
+                <label for="Analogue">Analogue</label>
+            </div>
+
+            <div class="watch-type">
+                <input type="checkbox" value="Digital" name="watch-type" id="Digital">
+                <label for="Digital">Digital</label>
+            </div>
+
+            <div class="watch-type">
+                <input type="checkbox" value="Hybrid" name="watch-type" id="Hybrid">
+                <label for="Hybrid">Hybrid</label>
+            </div>
+
+            <div class="watch-type">
+                <input type="checkbox" value="Smartwatch" name="watch-type" id="Smartwatch">
+                <label for="Smartwatch">Smartwatch</label>
+            </div>
+        </li>
+
+        <li> <label>Case Material: </label>
+            <div class="case-material">
+
+
+                <div class="watch-type">
+                    <input type="checkbox" value="Stainless-steel" name="case-material" id="Stainless-steel">
+                    <label for="Stainless-steel">Stainless-steel</label>
+                </div>
+
+                <div class="watch-type">
+                    <input type="checkbox" value="plastic" name="case-material" id="plastic">
+                    <label for="plastic">Plastic</label>
+                </div>
+
+                <div class="watch-type">
+                    <input type="checkbox" value="ceramic" name="case-material" id="ceramic">
+                    <label for="ceramic">Ceramic</label>
+                </div>
+            </div>
+        </li>
+
+        <li> <label>Starp Material: </label>
+            <div class="strap-material">
+
+                <div class="watch-type">
+                    <input type="checkbox" value="Leather" name="case-material" id="Leather">
+                    <label for="Leather">Leather</label>
+                </div>
+
+                <div class="watch-type">
+                    <input type="checkbox" value="metal" name="case-material" id="metal">
+                    <label for="metal">Metal</label>
+                </div>
+
+                <div class="watch-type">
+                    <input type="checkbox" value="rubber" name="case-material" id="rubber">
+                    <label for="rubber">Rubber</label>
+                </div>
+            </div>
+        </li>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
